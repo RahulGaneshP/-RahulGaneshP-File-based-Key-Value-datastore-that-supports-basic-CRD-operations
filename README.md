@@ -32,6 +32,7 @@ Languages:
 
 Python
 
+Run the main.py file.
 
 Code is accompanied by  unit tests with sample input and output test cases ,please go through sample ip_op.pdf and the comments for the same and to know how the code works and how to perform operations.
 The key_value_datastore.py module is imported as library and used in the main.py file, both the files should be in the same directory.
