@@ -27,11 +27,17 @@ The data store will support the following:
 
 Usage:
 1.place both the key_value_datastore.py and mainn.py file in the same directory.
+
 2.Use python version 3.0 and above. 
+
 3.Run the main.py file. 
+
 4.select an operation to be performed on the data store. 
+
 5.Enter optional file path Or choose the default location of the key-value datastore. 
+
 6.Enter the Key,Value and Time-to-Live property values and thus the operations are performed. 
+
 7.Choose Exit option to terminate the program. 
 
 
