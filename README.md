@@ -2,7 +2,7 @@
 
 a file-based key-value data store that supports the basic CRD (create, read, and delete) operations. This data store is meant to be used as a local storage for one single process on one laptop. The data store must be exposed as a library to users that can instantiate and works with the data store.
 
-The data store will support the following functional requirements:
+The data store will support the following:
 
 1. It can be initialized using an optional file path. If one is not provided, it will reliably create itself in a default location on the laptop. 
 
@@ -18,21 +18,34 @@ The data store will support the following functional requirements:
 
 7. Appropriate error responses will always be returned to the user if it uses the data store in unexpected ways or breaches any limits.
 
+8. The size of the file storing data must never exceed 1GB. 
 
-The data store will also support the following non-functional requirements:
+9. More than one client process cannot be allowed to use the same file as a data store at any given time. The data store is thread-safe.
 
-1. The size of the file storing data must never exceed 1GB. 
+10. The client will bear as little memory costs as possible to use this data .
 
-2. More than one client process cannot be allowed to use the same file as a data store at any given time. The data store is thread-safe.
 
-3. The client will bear as little memory costs as possible to use this data .
+Usage:
+1.place both the key_value_datastore.py and mainn.py file in the same directory.
+2.Use python version 3.0 and above. 
+3.Run the main.py file. 
+4.select an operation to be performed on the data store. 
+5.Enter optional file path Or choose the default location of the key-value datastore. 
+6.Enter the Key,Value and Time-to-Live property values and thus the operations are performed. 
+7.Choose Exit option to terminate the program. 
 
 
 Languages:
 
 Python
 
-Run the main.py file.
+Code is accompanied with sample input and output test cases,please go through sample ip_op.pdf and the comments for the same and to know how the code works and how to perform operations. is accompanied with sample input and output test cases done ,please go through sample ip_op.pdf and the comments for the same and to know how the code works and how to perform operations.
 
-Code is accompanied with sample input and output test cases done ,please go through sample ip_op.pdf and the comments for the same and to know how the code works and how to perform operations.
 The key_value_datastore.py module is imported as library and used in the main.py file, both the files should be in the same directory.
+
+
+
+
+
+
+
